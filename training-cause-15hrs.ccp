@@ -1,3 +1,183 @@
+
+/******** page 60 ********/
+https://wokwi.com/projects/371584656970629121
+
+/******** page 62 ********/
+void setup() {
+ Serial.begin(115200);
+}
+
+void loop{
+ Serial.println("Hello TINY32");
+ delay(1000); 
+}
+
+
+/******** page 65 ********/
+void setup() {
+Serial.begin(115200);
+pinMode(4, OUTPUT); //RED LED
+}
+void loop() {
+int x = 121;
+
+if(x>120)
+{
+	digitalWrite(4, HIGH);
+}
+}
+
+
+/******** page 67 ********/
+void setup() {
+Serial.begin(115200);
+pinMode(4, OUTPUT); //Red LED
+pinMode(12,OUTPUT); //Blue LED
+}
+void loop() {
+	int x = 119;
+	if(x>120)
+	{	
+		digitalWrite(4, HIGH);
+	}
+	else
+	{
+		digitalWrite(12,HIGH);
+	}
+}
+
+/******** page 69 ********/
+void setup() {
+Serial.begin(115200);
+pinMode(4, OUTPUT); //Red LED
+pinMode(12,OUTPUT); //Blue LED
+}
+void loop() {
+	int x = 119;
+	if(x==120)
+	{	
+		digitalWrite(4, HIGH);
+	}
+	else if (x==125)
+
+	{
+		digitalWrite(12,HIGH);
+	}
+	else
+	{
+		digitalWrite(4, HIGH);
+		digitalWrite(12,HIGH);
+	}
+}
+
+/******** page 71 ********/
+void setup() {
+	Serial.begin(115200);
+}
+void loop() {
+Serial.println(1);
+Serial.println(2);
+Serial.println(3);
+Serial.println(4);
+Serial.println(5);
+Serial.println(6);
+Serial.println(7);
+Serial.println(8);
+Serial.println(9);
+Serial.println(10);
+
+while(true); //ให้โปรแกรมหยุดตรงนี้
+}
+
+
+/******** page 72 ********/
+void setup() {
+	Serial.begin(115200);
+}
+void loop() {
+	int x;
+for(x=1; x<11; x++)
+{
+	Serial.println(x);
+}
+while(true); //ให้โปรแกรมหยุดตรงนี้
+}
+
+
+/******** page 74 ********/
+int x = 0;
+void setup() {
+	Serial.begin(115200);
+}
+void loop() {
+	while(x<10)
+	{
+		Serial.print("x =");
+		Serial.println(x);
+		x = x+1;
+	}
+}
+
+
+/******** page 76 ********/
+int x = 0;
+void setup() {
+	Serial.begin(115200);
+}
+void loop() {
+	do{
+		Serial.print("x =");
+		Serial.println(x);
+		x = x+1;
+	} while(x<10);
+}
+
+
+/******** page 78 ********/
+void setup() {
+	Serial.begin(115200);
+}
+void loop() {
+	int var=1;
+	switch(x)
+{
+case 1:
+Serial.println("var is 1");
+break;
+case 2:
+Serial.println("var is 2");
+break;
+default:
+Serial.println("Not match any case!");
+break;
+}
+	while(true); //ให้โปรแกรมหยุดตรงนี้
+}
+
+/******** page 80 ********/
+void setup() {
+	Serial.begin(115200);
+}
+void loop() {
+	int var=1;
+	switch(x)
+{
+case 1:
+Serial.println("var is 1");
+break;
+case 2:
+Serial.println("var is 2");
+break;
+default:
+Serial.println("Not match any case!");
+break;
+}
+	while(true); //ให้โปรแกรมหยุดตรงนี้
+}
+
+
+
+
 /******** page 102 ********/
 void setup() {
  Serial.begin(115200);
